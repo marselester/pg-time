@@ -1,5 +1,7 @@
 # PostgreSQL Timestamptz and Go Idiosyncrasies
 
+[Time is hard topic](https://zachholman.com/talk/utc-is-enough-for-everyone-right) ⏳
+
 PostgreSQL converts time from the connection's time zone to UTC on storage,
 and from UTC to the connection's time zone on retrieval.
 However I was surprised to find that [pgx PostgreSQL driver](https://github.com/jackc/pgx)
